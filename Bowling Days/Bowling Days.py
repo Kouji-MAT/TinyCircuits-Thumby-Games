@@ -1089,6 +1089,8 @@ while (1):##################################################
 
             PowCNT=0
             PowCNTadd=1
+            if (Btn.buttonA.justPressed()):
+                flg=flg# RESET justpressed
             while(MODE==4):
                 Grf.display.drawFilledRectangle(0, 34, 50,5, 1)   
                 Grf.display.drawFilledRectangle(21, 34, 50,5, 0)                
@@ -1125,7 +1127,8 @@ while (1):##################################################
                 SPINadd=-1
             if(SPINadd>1):
                 SPINadd=1
-
+            if (Btn.buttonA.justPressed()):
+                flg=flg# RESET justpressed
             flg=0
             while(MODE==5):
                 
